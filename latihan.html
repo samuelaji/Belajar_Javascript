@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar JavaScript DOM</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .biru-muda {
+            background-color: lightblue;
+        }
+
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-top: 10px;
+            width: 200px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .close {
+            cursor: pointer;
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="judul">Belajar DOM Selection</h1>
+
+    <div id="container">
+        <section id="a">
+            <p class="p1">Paragraf 1</p>
+            <a href="http://google.com">Ini Link ke Google</a>
+            <p class="p2">Paragraf 2</p>
+            <p class="p3">Paragraf 3</p>
+        </section>
+
+        <section id="b">
+            <p>Paragraf 4</p>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </section>
+    </div>
+
+    <button id="btn-ubah">Ubah Warna Background</button>
+
+    <div class="container-card">
+        <div class="card">
+            <span>Nama: Samuel</span>
+            <span class="close">X</span>
+        </div>
+        <div class="card">
+            <span>Nama: Agus</span>
+            <span class="close">X</span>
+        </div>
+    </div>
+
+    <script src="01-dom-selection.js"></script>
+</body>
+
+</html>
